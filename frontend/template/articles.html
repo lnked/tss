@@ -1,0 +1,33 @@
+@@include('./components/meta.html', {
+	"title": "Main"
+})
+
+@@include('./popups/popup.html')
+
+<main class="layout-wrapper">
+	@@include('./components/header.html', {
+		"current": "articles"
+	})
+
+	<div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
+		
+		@@include('./components/sidebar.html')
+
+		<div class="content">
+
+			@@include('./components/breadcrumbs.html', {
+				"page1": "Главная",
+				"page2": "",
+				"page3": ""
+			})
+			
+			<div class="content__title"></div>
+		</div>
+
+	</div>
+	
+</main>
+
+@@include('./components/footer.html')
+
+@@include('./components/scripts.html')

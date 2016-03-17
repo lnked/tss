@@ -1,0 +1,42 @@
+.phone {
+	height: 78px;
+	display: block;
+	line-height: 78px;
+	border-left: 1px solid $border-color;
+	padding-left: 35px;
+
+	&:before {
+		width: 18px;
+		height: 24px;
+		display: block;
+		content: "";
+		position: absolute;
+		left: -9px;
+		top: 50%;
+		margin-top: -12px;
+		background: #fff url(../images/phone.png) no-repeat 50% 50%;
+		background-size: 18px 18px;
+	}
+	
+	&__content {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1;
+	}
+
+	&__title {
+		color: #404040;
+		font-size: 1.2rem;
+		font-weight: 400;
+		display: block;
+	}
+
+	&__item {
+		color: #000;
+		font-size: 2.1rem;
+		font-weight: 700;
+		text-decoration: none;
+		display: block;
+		margin: 5px 0;
+	}
+}

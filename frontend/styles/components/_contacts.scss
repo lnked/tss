@@ -1,0 +1,41 @@
+.contacts {
+	height: 78px;
+	display: block;
+	line-height: 78px;
+	border-left: 1px solid $border-color;
+	padding-left: 35px;
+
+	&:before {
+		width: 18px;
+		height: 24px;
+		display: block;
+		content: "";
+		position: absolute;
+		left: -10px;
+		top: 50%;
+		margin-top: -12px;
+		background: #fff url(../images/mapicon.png) no-repeat 50% 50%;
+		background-size: 11px 18px;
+	}
+	
+	&__content {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1;
+	}
+
+	&__item {
+		color: #656565;
+		font-weight: 400;
+		font-size: 1.4rem;
+		line-height: 1;
+		text-decoration: none;
+		display: block;
+		margin: 8px 0;
+
+		&_link {
+			color: #000;
+			font-weight: 500;
+		}
+	}
+}

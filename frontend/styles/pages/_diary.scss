@@ -1,0 +1,142 @@
+.diary-list {
+	clear: both;
+}
+
+.diary-item {
+	width: 32%;
+	max-width: 31.2rem;
+	float: left;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	margin: 0 2% 2.5rem 0;
+
+	&:nth-child(3n+3) {
+		margin-right: 0;
+	}
+	
+	&__image {
+		clear: both;
+		display: block;
+		position: relative;
+		margin-bottom: .5rem;
+		
+		&:after {
+			width: 100%;
+			height: 100%;
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			border: 3px solid #f00;
+			box-sizing: border-box;
+			transition: opacity $time;
+		}
+
+		&:hover:after {
+			opacity: .5;
+		}
+
+		&:before {
+			width: 100%;
+			content: "";
+			display: block;
+			position: relative;
+			padding-top: 56.41025641%;
+			padding-top: 57%;
+		}
+
+		&__src {
+			position: absolute;
+			left: 0;
+			top: 0;
+			max-width: 100%;
+			height: auto;
+			vertical-align: middle;
+		}
+	}
+
+	&__caption {
+		position: relative;
+		display: block;
+		clear: both;
+
+		&__title {
+			height: 5.8rem;
+			margin-left: 9rem;
+			margin-right: 7.5rem;
+			display: block;
+			color: #f00;
+			font-size: 1.7rem;
+			font-weight: 400;
+			line-height: 5rem;
+			text-decoration: none;
+		}
+
+		&__middle {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 1.2;
+		}
+	}
+
+	&__date {
+		width: 8.3rem;
+		height: 5.8rem;
+		float: left;
+		font-size: 0;
+		line-height: 0;
+		padding-left: .5rem;
+		padding-top: 2px;
+		text-align: center;
+		background: url(/images/date-label.png) 0 0 no-repeat;
+		background-image: url(/images/date-label.svg);
+		background-size: 100%;
+		box-sizing: border-box;
+
+		&__day {
+			color: #fff;
+			font-size: 2rem;
+			line-height: 1;
+			font-weight: 700;
+			margin: 0;
+			display: block;
+		}
+
+		&__month, &__year {
+			color: #fff;
+			font-size: 1.4rem;
+			line-height: 1;
+			font-weight: 300;
+			display: block;
+		}
+		
+		&__month {
+			margin-bottom: .4rem;
+		}
+	}
+
+	&__count {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 5.8rem;
+		height: 5.8rem;
+		line-height: 3.8rem;
+		text-align: center;
+		border: 3px solid #435ba9;
+
+		&__number {
+			color: #435ba9;
+			font-size: 3.5rem;
+			font-weight: 700;
+		}
+
+		&__label {
+			color: #435ba9;
+			font-size: 1.4rem;
+			font-weight: 700;
+		    line-height: 0.7;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.action-sidebar {
+	clear: both;
+	position: relative;
+	// padding: 2rem 5rem 2rem 2.5rem;
+	padding: 1.5rem 5rem 2.5rem 2.5rem;
+	margin-bottom: 1rem;
+	// background: #2c3c8b url(/images/sidebar.png) 0 0 repeat-x;
+	
+	&:not(:last-child) {
+		border-bottom: 1px dashed #fff;
+	}
+
+	&__name {
+		color: #fff;
+		font-size: 1.8rem;
+		line-height: 1.4;
+		display: block;
+		margin-bottom: 0;
+		display: inline-block;
+		vertical-align: middle;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	&__more {
+		width: 2.6rem;
+		height: 2.6rem;
+		position: absolute;
+		right: 2rem;
+		top: 50%;
+		margin-top: -1.3rem;
+		display: block;
+		cursor: pointer;
+		background: url(/images/more-arrow.png) 100% 50% no-repeat;
+		background-image: url(/images/more-arrow.svg);
+		background-size: 2.6rem 2.6rem;
+	}
+}

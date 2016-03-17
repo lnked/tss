@@ -1,0 +1,25 @@
+.layout-header {
+	height: 115px;
+
+	&__wrapper {
+		@extend %layout;
+	}
+
+	&__phone {
+		position: absolute;
+		top: 17px;
+		right: 180px;
+	}
+
+	&__contacts {
+		position: absolute;
+		top: 17px;
+		right: 475px;
+	}
+
+	&__logo {
+		position: absolute;
+		left: 20px;
+		top: 30px;
+	}
+}

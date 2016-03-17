@@ -1,0 +1,20 @@
+@@include('./components/meta.html', {
+	"title": "Main"
+})
+
+@@include('./popups/popup.html')
+
+<main class="layout-wrapper">
+	@@include('./components/header.html', {
+		"current": ""
+	})
+
+	<div class="layout-wrapper__inner" itemprop="mainContentOfPage">
+		
+	</div>
+	
+</main>
+
+@@include('./components/footer.html')
+
+@@include('./components/scripts.html')

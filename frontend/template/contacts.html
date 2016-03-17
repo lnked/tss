@@ -1,0 +1,48 @@
+@@include('./components/meta.html', {
+	"title": "Main"
+})
+
+@@include('./popups/popup.html')
+
+<main class="layout-wrapper">
+	@@include('./components/header.html', {
+		"current": "contacts"
+	})
+
+	<div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
+		
+		@@include('./components/sidebar.html')
+
+		<div class="content">
+
+			@@include('./components/breadcrumbs.html', {
+				"page1": "Главная",
+				"page2": "Контакты",
+				"page3": ""
+			})
+			
+			<div class="content__title">Контакты</div>
+
+			<div class="content__subtitle">Отдел продаж:</div>
+			
+			<p>г. Краснодар, ул. Красноармейская 116/2<br>259-38-19;</p>
+			<p>г. Краснодар, ул. Лузана 36<br>215-95-53;</p>
+			<p><b>Приемная:</b> 215-45-04;<br><b>Главный бухгалтер:</b> 215-45-03;<br><b>Заместитель главного бухгалтера:</b> 215-69-14;<br><b>Отдел снабжения:</b> 215-68-67.</p>
+
+			<div class="content__subtitle">Схема проезда</div>
+
+			<div class="content__map">
+				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=pl5hSEqJPMucsTlQB8oHMM-39BMtGSeH&width=100%&height=388&lang=ru_RU&sourceType=constructor"></script>
+			</div>
+			
+			@@include('./components/feedback.html')
+
+		</div>
+
+	</div>
+	
+</main>
+
+@@include('./components/footer.html')
+
+@@include('./components/scripts.html')

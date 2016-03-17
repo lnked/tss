@@ -1,0 +1,29 @@
+.content {
+    width: 100%;
+    float: left;
+	padding: 35px 0 0 330px;
+    box-sizing: border-box;
+
+	&__title {
+		color: #2f5972;
+		font-size: 3.8rem;
+		font-weight: 400;
+		margin-bottom: 25px;
+	}
+	
+	&__subtitle {
+		color: #484848;
+		font-size: 1.7rem;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+
+	&__map {
+		clear: both;
+		height: 392px;
+		margin-bottom: 25px;
+		border: 2px solid #3b6f8c;
+	}
+}

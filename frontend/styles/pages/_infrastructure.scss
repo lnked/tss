@@ -1,0 +1,88 @@
+.infrastructure {
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	margin-bottom: 5rem;
+
+	&__item {
+		width: 100%;
+		text-align: center;
+		max-width: 33.333333333%;
+		@extend .inline;
+
+		&__image {
+			width: 100%;
+			max-width: 21.8rem;
+			overflow: hidden;
+			margin: 0 auto 2rem;
+			border-radius: 50%;
+			position: relative;
+			border: .6rem solid #435ba9;
+			transform: translate3d(0, 0, 0);
+			box-sizing: border-box;
+
+			&:before {
+				padding-top: 100%;
+				content: "";
+				display: block;
+			}
+	
+			&__src {
+				max-width: 100%;
+				vertical-align: middle;
+				position: absolute;
+				left: 0;
+				top: 0;
+				transition: transform .4s;
+			}
+
+			&:hover &__src {
+				transform: scale(1.15);
+			}
+
+			&:hover {
+				&:after {
+					opacity: 0;
+				}
+			}
+		}
+
+		&__title {
+			color: #000;
+			font-size: 2.5rem;
+			line-height: 1.2;
+			font-weight: 700;
+			margin-bottom: 1.5rem;
+		}
+
+		&__list {
+			clear: both;
+			margin: 0 auto;
+			max-width: 55%;
+			padding-left: 2rem;
+			text-align: left;
+			box-sizing: border-box;
+
+			&__line {
+				color: $color-text;
+				font-size: 1.3rem;
+				line-height: 1;
+				margin-bottom: 1rem;
+				position: relative;
+
+				&:before {
+					width: .4rem;
+					height: .4rem;
+					content: "";
+					border-radius: 50%;
+					background-color: #f00;
+					display: block;
+					position: absolute;
+					left: -1.3rem;
+					top: 50%;
+					margin-top: -.2rem;
+				}
+			}
+		}
+	}
+}
